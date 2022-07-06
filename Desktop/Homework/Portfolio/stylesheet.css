@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  /* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Header Styling*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: whitesmoke;
+    font-size: large;
+    padding: 3%;
+    margin: auto;
+}
+
+.NavLinks {
+      color: lavender;
+      justify-content:space-between;
+      flex-direction: row;
+  }
+
+ul {
+    display:flex;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+li {
+    margin: 15px;
+}
+
+/*Image Styling*/
+
+#portrait {
+    width: 45%;
+    height: auto;
+}
+
+#hubble {
+    width: 60%;
+    height: auto;
+}
+
+/*Image Stacking Styling*/
+
+.image-stack {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.image-stack_item--bottom {
+    grid-column: 4 / -1;
+    grid-row: 1;
+  }
+  
+.image-stack_item--top {
+    grid-row: 1;
+    grid-column: 1 / span 8;
+    padding-top: 20%; 
+    z-index: 1; 
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+  }
+
+/* Section Styling */
+
+.about-me-bio {
+    padding: 10%;
+}
+
+.my-projects {
+    padding: 10%;
+}
+
+.my-resume {
+    padding: 10%;
+}
+
+.contact-me {
+    padding: 10%;
+}
+
+#runbuddy {
+    width: 75%;
+    height: auto;
+    border-style: double;
+}
+
+ 
+  
+ 
